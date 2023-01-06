@@ -49,7 +49,7 @@ function updateStyleSheet() {
 	if (styleLink?.includes("dark.css") || styleLink?.includes("colorful.css")) {
 		document
 			.getElementById("page-color")
-			?.setAttribute("href", "https://davidteju.dev/styling/theme.css");
+			?.setAttribute("href", "https://ayoadeleye.dev/styling/theme.css");
 	}
 }
 

@@ -1,10 +1,9 @@
 function stretchMain() {
-	const main = document.querySelector("#main") as HTMLElement;
-	let toStretch = document.querySelector("#front") as HTMLElement;
+    const main = document.querySelector("#main") as HTMLElement;
+    let toStretch = document.querySelector("#front") as HTMLElement;
 
-	toStretch.style.minHeight = `calc(100vh - ${
-		getComputedStyle(main).marginTop
-	} - ${getComputedStyle(toStretch).marginBottom})`;
+    toStretch.style.minHeight = `calc(100vh - ${getComputedStyle(main).marginTop
+        } - ${getComputedStyle(toStretch).marginBottom})`;
 }
 
 function onScroll() {

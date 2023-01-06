@@ -18,11 +18,11 @@ function pushFooter() {
     const footerHeight = footer !== null ? (_a = getComputedStyle(footer)) === null || _a === void 0 ? void 0 : _a.height : 0;
     main.style.minHeight =
         "calc" +
-            "(100vh - 2vh - 64px - " +
-            headerHeight +
-            " - " +
-            footerHeight +
-            ")";
+        "(100vh - 2vh - 64px - " +
+        headerHeight +
+        " - " +
+        footerHeight +
+        ")";
     //-2vh -64px to account for margins
 }
 function swapThemeStyleSheet() {
@@ -45,7 +45,7 @@ function updateStyleSheet() {
     const styleLink = (_a = document.getElementById("page-color")) === null || _a === void 0 ? void 0 : _a.getAttribute("href");
     if ((styleLink === null || styleLink === void 0 ? void 0 : styleLink.includes("dark.css")) || (styleLink === null || styleLink === void 0 ? void 0 : styleLink.includes("colorful.css"))) {
         (_b = document
-            .getElementById("page-color")) === null || _b === void 0 ? void 0 : _b.setAttribute("href", "https://davidteju.dev/styling/theme.css");
+            .getElementById("page-color")) === null || _b === void 0 ? void 0 : _b.setAttribute("href", "https://ayoadeleye.dev/styling/theme.css");
     }
 }
 function elementOuterHeight(el) {
