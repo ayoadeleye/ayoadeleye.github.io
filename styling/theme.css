@@ -15,18 +15,18 @@
 }
 
 .light-theme header nav {
-  border-bottom: solid #dcdcdc;
+  border-bottom: solid black;
 }
 
 .light-theme footer {
   background-color: rgba(53, 99, 146, 0.1);
-  color: #fafafa;
+  color: black;
 }
 
 .light-theme h1,
 .light-theme h2,
 .light-theme h3 {
-  border-bottom: double #dcdcdc;
+  border-bottom: double black;
 }
 
 .light-theme h1,
@@ -50,7 +50,7 @@
 }
 
 .light-theme a {
-  border-bottom: 1px solid #d7d7d7;
+  border-bottom: 1px solid black;
   color: black;
 }
 
