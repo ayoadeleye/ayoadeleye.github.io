@@ -1,5 +1,4 @@
-@mixin color-scheme(
-	$page-background,
+@mixin color-scheme($page-background,
 	$primary-text,
 	$footer-background,
 	$footer-text,
@@ -7,31 +6,36 @@
 	$link-underline,
 	$link-text,
 	$slider-color,
-	$content
-) {
+	$content) {
 	body {
 		background: $page-background;
 		color: #cacaca;
 	}
+
 	div.nav {
 		border-right: solid $primary-text;
 	}
+
 	header::after {
 		background: $page-background;
 		color: $primary-text;
 	}
+
 	header nav {
 		border-bottom: solid $primary-text;
 	}
+
 	footer {
 		background-color: $footer-background;
 		color: $footer-text;
 	}
+
 	h1,
 	h2,
 	h3 {
 		border-bottom: double $primary-text;
 	}
+
 	h1,
 	h2,
 	h3,
@@ -43,15 +47,18 @@
 
 		color: $headings-color;
 	}
+
 	nav {
 		a {
 			color: $headings-color;
 		}
 	}
+
 	a {
 		border-bottom: 1px solid $link-underline;
 		color: $link-text;
 	}
+
 	.slider:after {
 		position: absolute;
 		content: $content;
@@ -66,28 +73,27 @@
 		bottom: 4px;
 		line-height: 1.5rem;
 	}
+
 	.slider {
 		background-color: $slider-color;
 	}
 }
 
 .light-theme {
-	@include color-scheme(
-		#222831,
+	@include color-scheme(#222831,
 		#dcdcdc,
 		rgb(53, 99, 146, 0.1),
 		#fafafa,
 		#d7f3f7,
-		#d7d7d7,
-		#b8c6c8,
+		black,
+		black,
 		#2196f3,
 		"🌞"
 	);
 }
 
 .dark-theme {
-	@include color-scheme(
-		#252525,
+	@include color-scheme(#252525,
 		#999999,
 		rgb(53, 99, 146, 0.1),
 		#fafafa,
